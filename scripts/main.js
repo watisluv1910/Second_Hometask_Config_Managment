@@ -4,8 +4,9 @@ const watchedDependencies = [];
 function submitForm() {
     if (document.querySelector('input').value != watchedDependencies.slice(-1)) {
         textarea.value = "digraph G {\n";
-        getPackageDependencies(document.querySelector('input').value, 0);
+        getPackageDependencies(document.querySelector('input').value, 1);
         textarea.value += "}";
+        paintGraph(textarea.value);
     }
 }
 

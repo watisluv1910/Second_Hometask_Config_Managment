@@ -4,6 +4,11 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <script src="//d3js.org/d3.v5.min.js"></script>
+        <script src="https://unpkg.com/@hpcc-js/wasm@0.3.11/dist/index.min.js"></script>
+        <script src="https://unpkg.com/d3-graphviz@3.0.5/build/d3-graphviz.js"></script>
+
         <link rel="stylesheet" href="style.css">
         <title>Nvm dependencies visualizer</title>
     </head>
@@ -14,8 +19,12 @@
                 <button class="btn" type="button" onclick="submitForm()">show</button>
             </div>
         </form>
-        <textarea name="output" cols="30" rows="10"></textarea>
 
-        <script src="/scripts/mainScript.js"></script>
+        <textarea name="output" cols="30" rows="10"></textarea> 
+        
+        <div id="graph"></div>
+
+        <script src="/scripts/main.js" defer></script>
+        <script src="/scripts/graph.js" defer></script>
     </body>
 </html>

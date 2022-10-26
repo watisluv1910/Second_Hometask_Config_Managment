@@ -74,3 +74,19 @@ textarea {
 textarea::-webkit-scrollbar {
     display: none;
 }
+
+#graph {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+svg {
+    width: 90%;
+    height: 800px;
+}
+
+svg g {
+    /* Forbid transform */
+    transform: none !important;
+}
